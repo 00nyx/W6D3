@@ -15,6 +15,8 @@ class UsersController < ApplicationController
   end
 
   def show
+
+    debugger
     user = User.find(params[:id])
     render json: params
   end
@@ -29,6 +31,8 @@ class UsersController < ApplicationController
   end
 
   def destroy
+
+    debugger
     user = User.find(params[:id])
     user.destroy
     render json: user
